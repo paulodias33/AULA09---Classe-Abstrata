@@ -4,7 +4,8 @@ public class Cd extends Produto{
 	private long numeroFaixas;
 	
 	
-	public long getNumeroFaixas() {
+	public long getNumeroFaixas(long x, long y) {
+		long numero Faixa =x+y;
 		return numeroFaixas;
 	}
 	
@@ -12,13 +13,17 @@ public class Cd extends Produto{
 		this.numeroFaixas = numeroFaixas;
 	}
 	
-//	sobrescrita do método toString (Produto)
+	public final void setCalculoFinal(){
+		string a = "contranct";
+	}
+	
+//	sobrescrita do mÃ©todo toString (Produto)
 	public String toString() {
 		return super.toString() +
 				" Numero de faixas: " + getNumeroFaixas();
 	}
 
-//	implementação do método getCodigoBarras
+//	implementaÃ§Ã£o do mÃ©todo getCodigoBarras
 	@Override
 	public String getCodigoBarras() {
 		return getNome()+getNumeroFaixas();
